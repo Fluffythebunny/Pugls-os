@@ -1,6 +1,8 @@
-# Windows-like OS
+# Pugls OS
 
 This is a web-based operating system that mimics the look and feel of a Windows-like environment. It includes features such as a taskbar, start menu, file manager, text editor, and a customizable browser app.
+
+[Live demo!](https://pugls-os.pages.dev/)
 
 ## Features
 
