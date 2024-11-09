@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pugls OS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body data-theme="dark">
+    <div class="desktop" id="desktop"></div>
+
+    <div class="taskbar">
+        <div class="taskbar-start">
+            <button id="startButton"><i class="fas fa-th"></i></button>
+        </div>
+        <div class="taskbar-icons"></div>
+        <div class="taskbar-right">
+            <button id="darkModeToggle"><i class="fas fa-moon"></i></button>
+            <span class="clock">00:00</span>
+        </div>        
+    </div>
+
+    <div class="start-menu" id="startMenu">
+        <div class="menu-item"><i class="fas fa-folder"></i> Files</div>
+        <div class="menu-item"><i class="fas fa-edit"></i> Text Editor</div>
+        <div class="menu-item"><i class="fas fa-cog"></i> Settings</div>
+        <div class="menu-item"><i class="fas fa-code"></i> VS Code</div>
+    </div>
+
+    <div class="context-menu">
+        <div class="menu-item" id="newFile"><i class="fas fa-file"></i> New File</div>
+        <div class="menu-item" id="newFolder"><i class="fas fa-folder"></i> New Folder</div>
+        <div class="menu-item" id="refresh"><i class="fas fa-sync"></i> Refresh</div>
+        <div class="menu-item" id="delete"><i class="fas fa-trash"></i> Delete</div>
+    </div>    
+
+    <div class="file-manager window">
+        <div class="window-header">
+            <span>File Explorer</span>
+            <div class="window-controls">
+                <button class="minimize"><i class="fas fa-minus"></i></button>
+                <button class="maximize"><i class="fas fa-square"></i></button>
+                <button class="close"><i class="fas fa-times"></i></button>
+            </div>
+        </div>
+        <div class="file-manager-toolbar">
+            <button id="newFileBtn"><i class="fas fa-file"></i> New File</button>
+            <button id="newFolderBtn"><i class="fas fa-folder"></i> New Folder</button>
+            <button id="deleteBtn"><i class="fas fa-trash"></i> Delete</button>
+        </div>        
+        <div class="file-manager-content">
+            <div class="sidebar">
+                <div class="sidebar-item active"><i class="fas fa-desktop"></i> Desktop</div>
+                <div class="sidebar-item"><i class="fas fa-folder"></i> Documents</div>
+                <div class="sidebar-item"><i class="fas fa-download"></i> Downloads</div>
+            </div>
+            <div class="files-container" id="filesContainer"></div>
+        </div>
+    </div>
+
+    <div class="text-editor window">
+        <div class="window-header">
+            <span id="editor-title">Untitled.txt</span>
+            <div class="window-controls">
+                <button class="minimize"><i class="fas fa-minus"></i></button>
+                <button class="maximize"><i class="fas fa-square"></i></button>
+                <button class="close"><i class="fas fa-times"></i></button>
+            </div>
+        </div>
+        <div class="editor-toolbar">
+            <button id="saveFile"><i class="fas fa-save"></i> Save</button>
+        </div>
+        <div class="editor-content">
+            <textarea id="editor-textarea"></textarea>
+        </div>
+    </div>
+</body>
+</html>
